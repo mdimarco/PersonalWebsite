@@ -46,6 +46,7 @@
     top: 30%;
     text-shadow: 1px 1px 2px #000;
     cursor: pointer;
+    z-index: 1;
 
     @media( max-width: $mediumDevice ) {
     	font-size: 3em;
@@ -58,7 +59,7 @@
 	width: 30%;
     height: 30%;
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.5%;
 
     &:hover {
     	text-decoration: none;
@@ -116,7 +117,7 @@
 		color: $small-text-color;
 	}
 
-	@media( max-width: $mediumDevice ){
+	@media( max-width: $mediumDevice ) {
 		display: block;
 		width: 66%;
 		margin: 0 auto;
@@ -126,6 +127,10 @@
 .work-content-square {
 	width: 30%;
 	margin: 0 0 0 3%;
+	@media( max-width: $mediumDevice ) {
+		width: 66%;
+		margin: 0 auto;
+	}
 }
 
 #register-content {
