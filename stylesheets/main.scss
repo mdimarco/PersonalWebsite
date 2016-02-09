@@ -1,0 +1,47 @@
+
+
+@import "modules/colors";
+@import "modules/device-sizes";
+
+@import "vendors/bootstrap";
+
+@import "partials/navbar";
+@import "partials/bio";
+@import "partials/work";
+
+
+
+body {
+	background-color: $background-color;
+}
+
+header {
+	height: 10%;
+}
+
+hr {
+	width: 90%;
+}
+
+a {
+	cursor: pointer;
+}
+
+section {
+	width: 90%;
+	margin: 5% auto;
+	background-color: $card-background-color;
+	border-radius: .7em;
+	border: 1px solid $border-color;
+	padding: 3% 0;
+}
+
+.logo {
+	width: 33%;
+	margin-left: 33%;
+	margin-top: 5%;
+}
+
+.logo-sep {
+	width: 50%;
+}

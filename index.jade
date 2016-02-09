@@ -1,0 +1,154 @@
+
+head
+	style
+		include stylesheets/main.css
+	title Mason DiMarco
+	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+	script(src="./jquery-2.2.0.min.js")
+
+body
+	header
+		div(id="navbar")
+			h1 M D
+			div(id="navlinks")
+				a(href="#") Top
+				a(href="#work") Work
+				a Projects
+				a Contact
+
+	section(id="bio")
+		div(id="personal-container")
+			img(id="profile", src="images/me_cropped.jpg")
+			div(id="info")
+				h3 Mason DiMarco
+				h4 Senior, Brown University
+				h4 Sc.B. Computer Science
+
+			div(id="skills")
+				div(class="skill-text")
+					div(class="skill-type")
+						h3 Languages
+					h4 Javascript, Java, Python, C
+				div(class="skill-text")
+					div(class="skill-type")
+						h3 Web Dev
+					h4 Angular.js, Node.js, D3.js
+				div(class="skill-text")
+					div(class="skill-type")
+						h3 Data Science
+					h4 Mongodb, Matlab, SciPy, SQL
+
+	section(id="work")
+
+		//Control Panel
+		div(id="work-select")
+			div(class="work-title")
+				h1 Work
+				hr(class="logo-sep")
+			div(class="work-select-panel")
+				a(id="square-background-img", class="background-img", href="#square" )
+						div(class="work-select-panel-text") Square
+				a(id="yahoo-background-img", class="background-img", href="#yahoo") 
+						div(class="work-select-panel-text") Yahoo
+				a(id="ibm-background-img", class="background-img", href="#ibm") 
+						div(class="work-select-panel-text") IBM
+
+
+		//Square
+		div(id="square")
+			img(class="logo", src="images/square-logo.png")
+			div(class="work-title")
+				hr(class="logo-sep")
+				h4 Solutions Engineering Intern (Summer 2015)			
+				hr
+			div(id="register-content", class="work-content work-content-square")
+				img(class="work-icon", src="images/android_icon.jpg")
+				h3 Register API
+				div(class="work-text-container")
+					p 
+						| Created an API within Square's Android Register app, which allows merchants with their 
+						| own native/web applications to utilize Square, unblocking an estimated $20M in GPV
+			div(id="largesellers-content", class="work-content work-content-square")
+				div(class="work-icon")
+					i(class="fa fa-black-tie fa-3x")
+				h3 Large Sellers
+				div(class="work-text-container")
+					p 
+						| Lead meetings with external customers detailing technical solutions Square could provide to mid/large size merchants, from API integrations to potential custom software solutions
+			div(id="hackweek-content", class="work-content work-content-square")
+				img(class="work-icon", src="images/hackweek_graph.png")
+				h3 Hackweek
+				div(class="work-text-container")
+					p 
+						| Created and deployed a hierarchical company org chart using D3.js. Directed a Square 
+						| Interns Summer 2015 music video
+			div(id="square-back", class="btn btn-info back-link") Back
+		
+		//Yahoo
+		div(id="yahoo")
+			img(class="logo", src="images/yahoo_logo.png")
+			div(class="work-title")
+				hr(class="logo-sep")
+				h4 Cloud Services Intern (Summer 2014)			
+				hr
+			div(class="work-content")
+				img(class="work-icon", src="images/yworld_graph.png")
+				h3 YWorld
+				div(class="work-text-container")
+					p 
+						| Created world map visualization of interdatacenter traffic for Yahoo Network Operations. 
+						| Displayed realtime gridbased data of latency and packet loss using Node.js, NPM, and D3.js 
+						| deployed on internal virtual machines
+			div(class="work-content")
+				img(class="work-icon", src="images/ipython.png")
+				h3 IPython Notebooks
+				div(class="work-text-container")
+					p 
+						| Created proof of concept collaborative environment for dashboarding, and adhoc data 
+						| analysis of production monitoring data using Python, matplotlib, OpenTSDB, and bash
+			div(id="yahoo-back", class="btn btn-info back-link") Back
+
+		//IBM
+		div(id="ibm")
+			img(class="logo", src="images/ibm.png")
+			div(class="work-title")
+				hr(class="logo-sep")
+				h4 High Performance Computing Intern (Summer 2013)			
+				hr
+			div(class="work-content")
+				img(class="work-icon", src="images/cost_analysis.png")
+				h3 Cost Analysis Tool
+				div(class="work-text-container")
+					p 
+						| Wrote service in IBM's XCAT, Perl, and Python that monitored and graphed power consumption 
+						| of the p775 series supercomputer in an easy to view dashboard
+			div(class="work-content")
+				img(class="work-icon", src="images/hardware.jpg")
+				h3 IO Tech Lab
+				div(class="work-text-container")
+					p 
+						| IO tech lab - Wrote scripts for power management, network connections, and big data 
+						| analytics on power readings of the p775 supercomputer, as well as IO hardware
+			div(id="ibm-back", class="btn btn-info back-link") Back
+
+
+		script.
+
+			/**
+			 * makes clickable have hideMe hidden and showMe shown when clicked
+			 */
+			var addToggleVis = function (clickable, hideMe, showMe) {
+				$(clickable).click( function() {
+					$(hideMe).hide();
+					$(showMe).show();
+				});
+			};
+
+			addToggleVis("#square-background-img", "#work-select", "#square");
+			addToggleVis("#square-back", "#square", "#work-select");
+			addToggleVis("#yahoo-background-img", "#work-select", "#yahoo");
+			addToggleVis("#yahoo-back", "#yahoo", "#work-select");
+			addToggleVis("#ibm-background-img", "#work-select", "#ibm");
+			addToggleVis("#ibm-back", "#ibm", "#work-select");
+			
+

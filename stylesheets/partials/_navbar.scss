@@ -1,0 +1,48 @@
+#navbar {
+	width: 100%;
+	position: fixed;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #ddd;
+
+	h1 {
+		width: 25%;
+		display: inline-block;
+		margin-left: 5%;
+		margin-top: 2%;
+
+		@media (max-width: $mediumDevice) {
+			font-size: 1.5em;
+		}
+	}
+
+	a {
+		padding: 2%;
+	}
+}
+
+#navlinks {
+
+	display: inline-block;
+	width: 70%;
+	
+
+	a {
+		color: #797A84;
+		cursor: pointer;
+		width: 25%;
+		margin: 2%;
+
+	}
+
+	a:hover {
+		color: #242D84;
+	}
+
+	a:first-child {
+		margin-left: 25%;
+
+		@media (max-width: $smallDevice) {
+			margin-left: 1%;
+		}
+	}
+}
