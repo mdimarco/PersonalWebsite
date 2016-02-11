@@ -1,9 +1,10 @@
 
 head
+	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
 	style
 		include stylesheets/main.css
 	title Mason DiMarco
-	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+	
 	script(src="./javascripts/jquery-2.2.0.min.js")
 
 body
@@ -14,8 +15,11 @@ body
 	//Bio Section
 	include ./jade_partials/bio.jade
 
-	//project Section
+	//Project Section
 	include ./jade_partials/project.jade
+
+	//Contact Section
+	include ./jade_partials/contact.jade
 
 	script(src="./javascripts/visibilityToggling.js")
 			

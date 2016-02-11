@@ -1,0 +1,44 @@
+#contact {
+	background-color: #FA8072;
+	padding-bottom: 10%;
+
+	h1 {
+		text-align: center;
+		font-size: 3em;
+		margin-bottom: 5%;
+	}
+}
+
+
+.contact-icon-container {
+	width: 66%;
+	margin: 0 auto;
+}
+
+.contact-icon-wrapper {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+
+	@media( max-width: $smallDevice ) {
+		width: 100%;
+		margin-top: 3%;
+	}
+}
+
+.contact-icon-link {
+	cursor: pointer;
+	color: #333;
+	&:visited {
+		color: #333;
+	}
+	&:hover {
+		color: #F1E06A;
+		text-decoration: none;
+	}
+	
+}
+
+.contact-icon {
+	font-size: 5em;
+}
