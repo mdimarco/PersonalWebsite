@@ -1,0 +1,4 @@
+Initially Started as a project for CS-132, Creating Modern Web Apps
+
+The website is primarily developed using Jade and SCSS, with corresponding main files: index.jade and stylesheets/main.scss.
+
