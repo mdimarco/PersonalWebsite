@@ -7,17 +7,17 @@
 
 @import "partials/navbar";
 @import "partials/bio";
-@import "partials/work";
+@import "partials/content";
+@import "partials/project";
 
-
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 200;
+}
 
 body {
 	background-color: $background-color;
 }
 
-header {
-	height: 10%;
-}
 
 hr {
 	width: 90%;
@@ -28,20 +28,25 @@ a {
 }
 
 section {
-	width: 90%;
-	margin: 5% auto;
+	width: 100%;
 	background-color: $card-background-color;
-	border-radius: .7em;
+	border-radius: .3em;
 	border: 1px solid $border-color;
-	padding: 3% 0;
+	padding: 6% 0;
 }
 
 .logo {
 	width: 33%;
 	margin-left: 33%;
-	margin-top: 5%;
+	margin-top: 3%;
 }
 
 .logo-sep {
 	width: 50%;
+}
+
+.shadow {
+  -moz-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

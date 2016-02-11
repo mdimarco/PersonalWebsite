@@ -1,0 +1,135 @@
+
+#projects {
+	background-color: #8FBC8F;
+}
+
+#square, #yahoo, #ibm, #clinch, #deepcraft, #gendid {
+	display: none;
+}
+
+#square {
+	color: #1B1C1D;
+}
+
+#square-background-img {
+	@include background-image-icon("images/square_background.png");
+}
+
+#yahoo-background-img {
+	@include background-image-icon("images/yahoo_background.jpg");
+}
+
+#ibm-background-img {
+	@include background-image-icon("images/ibm_background.jpg");
+}
+
+#clinch-background-img {
+	@include background-image-icon("images/basketball.jpeg");
+}
+
+#deepcraft-background-img {
+	@include background-image-icon("images/deepcraft.png");
+}
+
+#gendid-background-img {
+	@include background-image-icon("images/gender_guess.jpg");
+}
+
+
+.back-link {
+	margin-left: 5%;
+}
+
+
+.project-title {
+	text-align: center;
+	margin-bottom: 3%;
+
+	h1 {
+		color: white;
+		font-size: 5em;
+    	font-weight: 100
+	}
+
+	h4 {
+		font-size: 2em;
+    	font-weight: 200;
+	}
+}
+
+.project-icon {
+	width: 33%;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.project-content {
+	display: inline-block;
+	vertical-align: top;
+
+	width: 40%;
+	margin: 0 5%;
+
+	h3 {
+		text-align: center;
+		color: #1B1A1A;
+    	font-weight: 400;
+	}
+	p {
+		color: #272727;
+		font-size: 1.2em;
+	}
+
+	@media( max-width: $mediumDevice ) {
+		display: block;
+		width: 66%;
+		margin: 0 auto;
+	}
+}
+
+.project-content-square {
+	width: 30%;
+	margin: 0 0 0 3%;
+	@media( max-width: $mediumDevice ) {
+		width: 66%;
+		margin: 0 auto;
+	}
+}
+
+#square-back, #yahoo-back, #ibm-back, #clinch-back, #deepcraft-back, #gendid-back{
+    margin: 0 0 0 5%;
+    color: #000;
+}
+
+.fa-arrow-left {
+    cursor: pointer;
+    &:hover {
+    	color: white;
+    }
+}
+
+
+/**
+ * SQUARE ICONS
+ */
+
+.fa-android, .fa-briefcase, .fa-usb {
+	color: #ffffff;
+}
+
+/**
+ * YAHOO ICONS
+ */
+
+.fa-globe, .fa-book {
+	color: #430095;
+}
+
+/**
+ * IBM ICONS
+ */
+
+.fa-line-chart, .fa-flask {
+	color: #1F70C1;
+}

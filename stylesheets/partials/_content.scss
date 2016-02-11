@@ -1,0 +1,70 @@
+
+/**
+ * Background icon, when hovered over darkens
+ * ex: square/yahoo/ibm clickable icons
+ */
+@mixin background-image-icon($image-url) {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url($image-url);
+    background-size: 100% 100%;
+
+    &:hover {
+        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url($image-url);
+        background-size: 100% 100%;
+        cursor: pointer;
+    }
+}
+
+
+.background-img {
+    background-size: 100% 100%;
+    vertical-align: top;
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    margin: 3% 0 0 2.5%;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    @media( max-width: $smallDevice ) {
+        display: block;
+        width: 60%;
+        margin: 0 0 10% 20%;
+    }
+
+    border: 1px solid white; 
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+
+}
+
+.project-select-image {
+	width: 30%;
+	margin-left: 3%;
+}
+
+.project-select-panel {
+	width: 100%;
+	max-width: 62em;
+    margin: auto;
+}
+
+.project-select-panel-text {
+	text-align: center;
+    font-size: 4em;
+    color: #fff;
+    font-weight: 100;
+    position: relative;
+    top: 30%;
+    text-shadow: 1px 1px 2px #000;
+    cursor: pointer;
+    z-index: 1;
+
+    @media( max-width: $mediumDevice ) {
+    	font-size: 3em;
+    }
+}
+
+.project-select-panel-text-2lines {
+    top: 15%;
+}
