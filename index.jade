@@ -6,6 +6,7 @@ head
 	title Mason DiMarco
 	
 	script(src="./javascripts/jquery-2.2.0.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js")
 
 body
 
@@ -15,13 +16,11 @@ body
 	//Bio Section
 	include ./jade_partials/bio.jade
 
-	//Project Section
-	include ./jade_partials/project.jade
+	//work Section
+	include ./jade_partials/work.jade
 
 	//Contact Section
 	include ./jade_partials/contact.jade
 
-	script(src="./javascripts/visibilityToggling.js")
-			
-			
-
+script(src="./javascripts/visibilityToggling.js")
+script(src="./javascripts/forceLayout.js")

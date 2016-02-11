@@ -9,18 +9,15 @@ var addToggler = function (clickable, hideMe, showMe) {
 };
 
 var addTogglers = function (id) {
-	addToggler(id+"-background-img", "#project-select", id);
-	addToggler(id+"-back", id, "#project-select");
+	addToggler(id+"-background-img", "#work-select", id);
+	addToggler(id+"-back", id, "#work-select");
 }
 
 
 var sections = [
 	"#square",
 	"#yahoo",
-	"#ibm",
-	"#clinch",
-	"#deepcraft",
-	"#gendid"];
+	"#ibm"];
 
 sections.forEach( function (each) {
 	addTogglers(each);

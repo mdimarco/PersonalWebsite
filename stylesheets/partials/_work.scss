@@ -1,6 +1,11 @@
 
-#projects {
+#work {
 	background-color: #8FBC8F;
+}
+
+#work-anchor {
+	position: relative;
+	top: -10%;
 }
 
 #square, #yahoo, #ibm, #clinch, #deepcraft, #gendid {
@@ -41,7 +46,7 @@
 }
 
 
-.project-title {
+.work-title {
 	text-align: center;
 	margin-bottom: 3%;
 
@@ -57,14 +62,14 @@
 	}
 }
 
-.project-icon {
+.work-icon {
 	width: 33%;
 	margin: 0 auto;
 	display: block;
 	text-align: center;
 }
 
-.project-content {
+.work-content {
 	display: inline-block;
 	vertical-align: top;
 
@@ -88,7 +93,7 @@
 	}
 }
 
-.project-content-square {
+.work-content-square {
 	width: 30%;
 	margin: 0 0 0 3%;
 	@media( max-width: $mediumDevice ) {

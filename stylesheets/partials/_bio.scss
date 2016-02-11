@@ -7,53 +7,55 @@
 
 
 #personal-container {
-	width: 90%;
-	margin: auto;
+	width: 30%;
+    margin: 5% 0 0 5%;
+    display: inline-block;
+    vertical-align: top;
+    @media( max-width: $mediumDevice ) {
+    	width: 100%;
+    }
 }
 
 #profile {
 	width: 20em;
 	border: 1px solid #656565;
 	border-radius: .7em;
-	@media( max-width: $mediumDevice ) {
-		width: 40%;
-	}
 
 	@media( max-width: $smallDevice ) {
 		display: none;
-		width: 70%;
-		margin-left: 15%;
 	}
 }
 
 
 #info {
-	display: inline-block;
 	white-space: nowrap;
-	margin-left: 5%;
-
-
-	@media( max-width: $smallDevice ) {
-		margin-left: 0%;
-	}
 
 
 	h3 {
-		font-size: 4em;
+		font-size: 3em;
 		padding-top: 5%;
 	}
 
+	@media( max-width: $mediumDevice) {
+    	display: inline-block;
+    	margin-left: 5%;
 
+    	h3 {
+    		font-size: 2em;
+    	}
+    	h4 {
+    		font-size: 1.5em;
+    	}
+    }
 
-	h3,h4 { 
-		@media( max-width: $mediumDevice ) {
-			font-size: 1.2em;
-		}
-
-		@media( max-width: $smallDevice ) {
+	@media( max-width: $smallDevice ) {
+		margin-left: 0%;
+		h3 {
 			padding: 0%;
 		}
 	}
+
+	
 
 
 }
@@ -61,6 +63,7 @@
 #skills {
 	clear: left;
 	padding-top: 1%;
+	display: none;
 }
 
 .skill-text {

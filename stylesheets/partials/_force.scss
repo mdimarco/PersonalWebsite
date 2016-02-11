@@ -1,0 +1,36 @@
+
+#force {
+	overflow: overlay;
+	display: inline-block;
+    width: 60%;
+
+    @media ( max-width: $mediumDevice ){
+    	display: none;
+    }
+}
+
+.node circle {
+  cursor: pointer;
+  stroke-width: 1.5px;
+
+  &:hover {
+  	stroke: #E0CF04;
+  }
+}
+
+.node text {
+  font-size: 1.5em;
+  font-weight: 100;
+  stroke: #E0E0E0;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+
+line.link {
+  fill: none;
+  stroke: rgba(240,240,240,.25);
+  stroke-width: 1.5px;
+}
+
+
