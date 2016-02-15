@@ -18,8 +18,7 @@
 
 #profile {
 	width: 20em;
-	border: 1px solid #656565;
-	border-radius: .7em;
+	border: 1px solid #fff;
 
 	@media( max-width: $smallDevice ) {
 		display: none;
