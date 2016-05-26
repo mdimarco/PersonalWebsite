@@ -6,28 +6,26 @@
 	background-color: #f6f6f6;
 	border-bottom: 1px solid #ddd;
 
-	h1 {
+	a {
+		h1 {
 		width: 25%;
 		display: inline-block;
 		margin-left: 5%;
-		margin-top: 2%;
+		margin-top: 22px;
 		font-weight: 100;
-		@media (max-width: $mediumDevice) {
-			font-size: 1.5em;
-		}
-	}
+		float: left;
+		color: #797A84;
 
-	a {
-		padding: 2%;
+		}
 	}
 }
 
 #navlinks {
 
 	display: inline-block;
-
-	width: 70%;
-	
+	float: right;
+	margin-right: 5%;
+	margin-top: 28px;	
 	a {
 		color: #797A84;
 		cursor: pointer;
@@ -35,6 +33,11 @@
 		margin: 2%;
 		font-size: 1.3em;
 		text-decoration: none;
+		padding: 2%;
+	}
+
+	@media (min-width: $mediumDevice) {
+		margin-right: 10%;
 	}
 
 	a:hover {
@@ -42,7 +45,6 @@
 	}
 
 	a:first-child {
-		margin-left: 25%;
 
 		@media (max-width: $smallDevice) {
 			margin-left: 1%;

@@ -1,6 +1,6 @@
 
 var width = 700,
-    height = 500,
+    height = 460,
     root;
 
 var force = d3.layout.force()
@@ -130,7 +130,9 @@ root = {
       {"name": "Angular", "size": nodeSize},
       {"name": "Node", "size": nodeSize},
       {"name": "D3", "size": nodeSize},
-      {"name": "Express", "size": nodeSize}  
+      {"name": "Express", "size": nodeSize},
+      {"name": "Meteor", "size": nodeSize},
+      {"name": "React", "size": nodeSize}    
      ]
   },
 
