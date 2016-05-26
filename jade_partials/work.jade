@@ -1,22 +1,9 @@
-mixin background-icon(name, text, link)
-	a(id="#{name}-background-img", class="background-img", href=link)
-		div(class="work-select-panel-text")&attributes(attributes) #{text}
-
-mixin work-title(title)
-	div(class="work-title")
-		h4 #{title}
-
-mixin work-back-button(name)
-	a
-		div(id="#{name}-back")
-			i(class="fa fa-arrow-left fa-3x")
-
 div(id="work-anchor")
 section(id="work")
 
 	//Control Panel
 	div(id="work-select")
-		div(class="work-title")
+		div(class="section-title")
 			h1 Work
 			hr(class="logo-sep")
 		div(class="work-select-panel")

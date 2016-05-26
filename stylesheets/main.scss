@@ -2,6 +2,7 @@
 
 @import "modules/colors";
 @import "modules/device-sizes";
+@import "modules/fonts";
 
 @import "vendors/bootstrap";
 
@@ -11,6 +12,7 @@
 @import "partials/content";
 @import "partials/work";
 @import "partials/contact";
+@import "partials/personal";
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 200;

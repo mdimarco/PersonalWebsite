@@ -1,0 +1,23 @@
+
+mixin background-icon(name, text, link)
+	a(id="#{name}-background-img", class="background-img", href=link)
+		div(class="work-select-panel-text")&attributes(attributes) #{text}
+
+
+//Work Mixins
+mixin work-title(title)
+	div(class="section-title")
+		h4 #{title}
+
+mixin work-back-button(name)
+	a
+		div(id="#{name}-back")
+			i(class="fa fa-arrow-left fa-3x")
+
+//Contact Mixins
+mixin social-icon(iconName, text, link)
+	div(class="contact-icon-wrapper")
+		a(href="#{link}", class="contact-icon-link")
+			i(class="fa fa-#{iconName} contact-icon")
+			p #{text}
+

@@ -1,4 +1,15 @@
-<head><meta name="viewport" content="width=device-width" initial-scale="1"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/><style>/*!
+<head><meta name="viewport" content="width=device-width" initial-scale="1"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/><style>.section-title {
+  text-align: center;
+  margin-bottom: 3%; }
+  .section-title h1 {
+    color: white;
+    font-size: 5em;
+    font-weight: 100; }
+  .section-title h4 {
+    font-size: 2em;
+    font-weight: 200; }
+
+/*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -5866,17 +5877,6 @@ line.link {
 .back-link {
   margin-left: 5%; }
 
-.work-title {
-  text-align: center;
-  margin-bottom: 3%; }
-  .work-title h1 {
-    color: white;
-    font-size: 5em;
-    font-weight: 100; }
-  .work-title h4 {
-    font-size: 2em;
-    font-weight: 200; }
-
 .work-icon {
   width: 33%;
   margin: 0 auto;
@@ -5939,14 +5939,10 @@ line.link {
 #contact {
   background-color: #FA8072;
   padding-bottom: 10%; }
-  #contact h1 {
-    text-align: center;
-    font-size: 3em;
-    margin-bottom: 5%; }
 
 .contact-icon-container {
   width: 66%;
-  margin: 0 auto; }
+  margin: 5% auto; }
 
 .contact-icon-wrapper {
   display: inline-block;
@@ -5967,7 +5963,10 @@ line.link {
     text-decoration: none; }
 
 .contact-icon {
-  font-size: 5em; }
+  font-size: 6em; }
+
+#personal {
+  background-color: rgba(103, 58, 183, 0.88); }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200; }
@@ -6003,18 +6002,18 @@ section {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=main.css.map */
-</style><title>Mason DiMarco</title><script src="./javascripts/jquery-2.2.0.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js"></script></head><body><!--Navbar--><header><div id="navbar"><a href="#bio"><h1>M D</h1></a><div id="navlinks"><a href="#work-anchor">Work</a><a>Personal</a><a href="#contact">Contact</a></div></div></header><!--Bio Section--><section id="bio"><div id="personal-container"><img id="profile" src="images/me.jpg" class="shadow"/><div id="info"><h3>Mason DiMarco</h3><h4>Brown University, 2016</h4><h4>Sc.B. Computer Science</h4></div><div id="skills"><div class="skill-text"><div class="skill-type"><h3>Languages</h3></div><h4>Javascript, Java, Python, C</h4></div><div class="skill-text"><div class="skill-type"><h3>Web Dev</h3></div><h4>Angular.js, Node.js, D3.js</h4></div><div class="skill-text"><div class="skill-type"><h3>Data Science</h3></div><h4>Mongodb, Matlab, SciPy, SQL</h4></div></div></div></section><!--work Section--><div id="work-anchor"></div><section id="work"><!--Control Panel--><div id="work-select"><div class="work-title"><h1>Work</h1><hr class="logo-sep"/></div><div class="work-select-panel"><a id="square-background-img" href="#work-anchor" class="background-img"><div class="work-select-panel-text">Square</div></a><a id="yahoo-background-img" href="#work-anchor" class="background-img"><div class="work-select-panel-text">Yahoo</div></a><a id="ibm-background-img" href="#work-anchor" class="background-img"><div class="work-select-panel-text">IBM</div></a><a id="clinch-background-img" href="http://www.clinchbasketball.com" class="background-img"><div class="work-select-panel-text">Clinch</div></a><a id="deepcraft-background-img" href="https://github.com/mdimarco/DeepCraft/blob/master/DeepCraft%20Presentation.pdf" class="background-img"><div class="work-select-panel-text">Deepcraft</div></a><a id="gendid-background-img" href="https://github.com/mdimarco/blog_gender_identification" class="background-img"><div class="work-select-panel-text work-select-panel-text-2lines">Gender Guesser</div></a></div></div><!--Square--><div id="square"><a><div id="square-back"><i class="fa fa-arrow-left fa-3x"></i></div></a><img src="images/square.png" class="logo"/><div class="work-title"><h4>Solutions Engineering Intern (Summer 2015)</h4></div><div id="register-content" class="work-content work-content-square"><div class="work-icon"><i class="fa fa-android fa-3x"></i></div><h3>Register API</h3><div class="work-text-container"><p> 
+</style><title>Mason DiMarco</title><script src="./javascripts/jquery-2.2.0.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js"></script></head><body><!--Mixins--><!--Work Mixins--><!--Contact Mixins--><!--Navbar--><header><div id="navbar"><a href="#bio"><h1>M D</h1></a><div id="navlinks"><a href="#work-anchor">Work</a><a>Personal</a><a href="#contact">Contact</a></div></div></header><!--Bio Section--><section id="bio"><div id="personal-container"><img id="profile" src="images/me.jpg" class="shadow"/><div id="info"><h3>Mason DiMarco</h3><h4>Brown University, 2016</h4><h4>Sc.B. Computer Science</h4></div><div id="skills"><div class="skill-text"><div class="skill-type"><h3>Languages</h3></div><h4>Javascript, Java, Python, C</h4></div><div class="skill-text"><div class="skill-type"><h3>Web Dev</h3></div><h4>Angular.js, Node.js, D3.js</h4></div><div class="skill-text"><div class="skill-type"><h3>Data Science</h3></div><h4>Mongodb, Matlab, SciPy, SQL</h4></div></div></div></section><!--Work Section--><div id="work-anchor"></div><section id="work"><!--Control Panel--><div id="work-select"><div class="section-title"><h1>Work</h1><hr class="logo-sep"/></div><div class="work-select-panel"><a id="square-background-img" href="#work-anchor" class="background-img"><div class="work-select-panel-text">Square</div></a><a id="yahoo-background-img" href="#work-anchor" class="background-img"><div class="work-select-panel-text">Yahoo</div></a><a id="ibm-background-img" href="#work-anchor" class="background-img"><div class="work-select-panel-text">IBM</div></a><a id="clinch-background-img" href="http://www.clinchbasketball.com" class="background-img"><div class="work-select-panel-text">Clinch</div></a><a id="deepcraft-background-img" href="https://github.com/mdimarco/DeepCraft/blob/master/DeepCraft%20Presentation.pdf" class="background-img"><div class="work-select-panel-text">Deepcraft</div></a><a id="gendid-background-img" href="https://github.com/mdimarco/blog_gender_identification" class="background-img"><div class="work-select-panel-text work-select-panel-text-2lines">Gender Guesser</div></a></div></div><!--Square--><div id="square"><a><div id="square-back"><i class="fa fa-arrow-left fa-3x"></i></div></a><img src="images/square.png" class="logo"/><div class="section-title"><h4>Solutions Engineering Intern (Summer 2015)</h4></div><div id="register-content" class="work-content work-content-square"><div class="work-icon"><i class="fa fa-android fa-3x"></i></div><h3>Register API</h3><div class="work-text-container"><p> 
 Created an API within Square's Android Register app, which allows merchants with their 
 own native/web applications to utilize Square, unblocking an estimated $20M in GPV</p></div></div><div id="largesellers-content" class="work-content work-content-square"><div class="work-icon"><i class="fa fa-briefcase fa-3x"></i></div><h3>Large Sellers</h3><div class="work-text-container"><p> 
 Lead meetings with external customers detailing technical solutions Square could provide to mid/large size merchants, from API integrations to potential custom software solutions</p></div></div><div id="hackweek-content" class="work-content work-content-square"><div class="work-icon"><i class="fa fa-usb fa-3x"></i></div><h3>Hackweek</h3><div class="work-text-container"><p> 
 Created and deployed a hierarchical company org chart using D3.js. Directed a Square 
-Interns Summer 2015 music video</p></div></div></div><!--Yahoo--><div id="yahoo"><a><div id="yahoo-back"><i class="fa fa-arrow-left fa-3x"></i></div></a><img src="images/yahoo_logo.svg" class="logo"/><div class="work-title"><h4>Cloud Services Intern (Summer 2014)</h4></div><div class="work-content"><div class="work-icon"><i class="fa fa-globe fa-3x"></i></div><h3>YWorld</h3><div class="work-text-container"><p> 
+Interns Summer 2015 music video</p></div></div></div><!--Yahoo--><div id="yahoo"><a><div id="yahoo-back"><i class="fa fa-arrow-left fa-3x"></i></div></a><img src="images/yahoo_logo.svg" class="logo"/><div class="section-title"><h4>Cloud Services Intern (Summer 2014)</h4></div><div class="work-content"><div class="work-icon"><i class="fa fa-globe fa-3x"></i></div><h3>YWorld</h3><div class="work-text-container"><p> 
 Created world map visualization of interdatacenter traffic for Yahoo Network Operations. 
 Displayed realtime gridbased data of latency and packet loss using Node.js, NPM, and D3.js 
 deployed on internal virtual machines</p></div></div><div class="work-content"><div class="work-icon"><i class="fa fa-book fa-3x"></i></div><h3>IPython Notebooks</h3><div class="work-text-container"><p> 
 Created proof of concept collaborative environment for dashboarding, and adhoc data 
-analysis of production monitoring data using Python, matplotlib, OpenTSDB, and bash</p></div></div></div><!--IBM--><div id="ibm"><a><div id="ibm-back"><i class="fa fa-arrow-left fa-3x"></i></div></a><img src="images/ibm.png" class="logo"/><div class="work-title"><h4>High Performance Computing Intern (Summer 2013)</h4></div><div class="work-content"><div class="work-icon"><i class="fa fa-line-chart fa-3x"></i></div><h3>Cost Analysis Tool</h3><div class="work-text-container"><p> 
+analysis of production monitoring data using Python, matplotlib, OpenTSDB, and bash</p></div></div></div><!--IBM--><div id="ibm"><a><div id="ibm-back"><i class="fa fa-arrow-left fa-3x"></i></div></a><img src="images/ibm.png" class="logo"/><div class="section-title"><h4>High Performance Computing Intern (Summer 2013)</h4></div><div class="work-content"><div class="work-icon"><i class="fa fa-line-chart fa-3x"></i></div><h3>Cost Analysis Tool</h3><div class="work-text-container"><p> 
 Wrote services in IBM's XCAT, Perl, and Python that monitored and graphed power consumption 
 of the p775 series supercomputer in an easy to view dashboard</p></div></div><div class="work-content"><div class="work-icon"><i class="fa fa-flask fa-3x"></i></div><h3>IO Tech Lab</h3><div class="work-text-container"><p> 
 Wrote scripts for power management, network connections, and big data 
-analytics on power readings of the p775 supercomputer, as well as IO hardware</p></div></div></div><!--Clinch--><div id="clinch"><a><div id="clinch-back"><i class="fa fa-arrow-left fa-3x"></i></div></a></div><!--Deepcraft--><div id="deepcraft"><a><div id="deepcraft-back"><i class="fa fa-arrow-left fa-3x"></i></div></a></div><div id="gendid"><a><div id="gendid-back"><i class="fa fa-arrow-left fa-3x"></i></div></a></div></section><!--Contact Section--><section id="contact"><h1>Get In Touch</h1><div class="contact-icon-container"><div class="contact-icon-wrapper"><a href="https://github.com/mdimarco" class="contact-icon-link"><i class="fa fa-github-square contact-icon"></i><p>Github</p></a></div><div class="contact-icon-wrapper"><a href="mailto:mhd894@gmail.com" class="contact-icon-link"><i class="fa fa-envelope contact-icon"></i><p>Email</p></a></div><div class="contact-icon-wrapper"><a href="https://www.linkedin.com/in/mason-henry-7a28ba38?trk=nav_responsive_tab_profile_pic" class="contact-icon-link"><i class="fa fa-linkedin-square contact-icon"></i><p>Linked In</p></a></div></div></section></body><script src="./javascripts/visibilityToggling.js"></script><script src="./javascripts/forceLayout.js"></script><script src="./javascripts/smoothScroll.js"></script>
+analytics on power readings of the p775 supercomputer, as well as IO hardware</p></div></div></div><!--Clinch--><div id="clinch"><a><div id="clinch-back"><i class="fa fa-arrow-left fa-3x"></i></div></a></div><!--Deepcraft--><div id="deepcraft"><a><div id="deepcraft-back"><i class="fa fa-arrow-left fa-3x"></i></div></a></div><div id="gendid"><a><div id="gendid-back"><i class="fa fa-arrow-left fa-3x"></i></div></a></div></section><!--Personal Section--><section id="personal"><div class="section-title"><h1>Personal</h1><hr class="logo-sep"/><a id="square-background-img" href="#none" class="background-img"><div class="work-select-panel-text"></div></a><a id="square-background-img" href="#none" class="background-img"><div class="work-select-panel-text"></div></a><a id="square-background-img" href="#none" class="background-img"><div class="work-select-panel-text"></div></a></div></section><!--Contact Section--><section id="contact"><div class="section-title"><h1>Get In Touch</h1><hr class="logo-sep"/></div><div class="contact-icon-container"><div class="contact-icon-wrapper"><a href="https://github.com/mdimarco" class="contact-icon-link"><i class="fa fa-github-square contact-icon"></i><p>Github</p></a></div><div class="contact-icon-wrapper"><a href="mailto:mhd894@gmail.com" class="contact-icon-link"><i class="fa fa-envelope contact-icon"></i><p>Email</p></a></div><div class="contact-icon-wrapper"><a href="https://www.linkedin.com/in/mason-henry-7a28ba38?trk=nav_responsive_tab_profile_pic" class="contact-icon-link"><i class="fa fa-linkedin-square contact-icon"></i><p>Linked In</p></a></div></div></section></body><script src="./javascripts/visibilityToggling.js"></script><script src="./javascripts/forceLayout.js"></script><script src="./javascripts/smoothScroll.js"></script>

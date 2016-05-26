@@ -1,3 +1,14 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 3%; }
+  .section-title h1 {
+    color: white;
+    font-size: 5em;
+    font-weight: 100; }
+  .section-title h4 {
+    font-size: 2em;
+    font-weight: 200; }
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5866,17 +5877,6 @@ line.link {
 .back-link {
   margin-left: 5%; }
 
-.work-title {
-  text-align: center;
-  margin-bottom: 3%; }
-  .work-title h1 {
-    color: white;
-    font-size: 5em;
-    font-weight: 100; }
-  .work-title h4 {
-    font-size: 2em;
-    font-weight: 200; }
-
 .work-icon {
   width: 33%;
   margin: 0 auto;
@@ -5939,14 +5939,10 @@ line.link {
 #contact {
   background-color: #FA8072;
   padding-bottom: 10%; }
-  #contact h1 {
-    text-align: center;
-    font-size: 3em;
-    margin-bottom: 5%; }
 
 .contact-icon-container {
   width: 66%;
-  margin: 0 auto; }
+  margin: 5% auto; }
 
 .contact-icon-wrapper {
   display: inline-block;
@@ -5967,7 +5963,10 @@ line.link {
     text-decoration: none; }
 
 .contact-icon {
-  font-size: 5em; }
+  font-size: 6em; }
+
+#personal {
+  background-color: rgba(103, 58, 183, 0.88); }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200; }
