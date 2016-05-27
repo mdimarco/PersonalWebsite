@@ -6001,6 +6001,10 @@ line.link {
     background-size: 100% 100%;
     cursor: pointer; }
 
+.work-select-panel-text.small-text {
+  font-size: 2em;
+  display: none; }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200; }
 

@@ -14,3 +14,8 @@
 #bike-background-img {
 	@include personal-image-icon("images/bike_fall.gif");
 }
+
+.work-select-panel-text.small-text {
+    font-size: 2em;
+    display: none;
+}

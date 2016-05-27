@@ -4,6 +4,12 @@ mixin background-icon(name, text, link)
 		div(class="work-select-panel-text")&attributes(attributes) #{text}
 
 
+mixin personal-background-icon(name, text, text2)
+	a(id="#{name}-background-img", class="background-img")
+		div(class="work-select-panel-text personal-title")&attributes(attributes) #{text}
+		div(class="work-select-panel-text small-text") #{text2}
+
+
 //Work Mixins
 mixin work-title(title)
 	div(class="section-title")
