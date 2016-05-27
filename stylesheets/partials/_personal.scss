@@ -4,9 +4,13 @@
 }
 
 #thailand-background-img {
-	@include background-image-icon("images/thailand_fight.gif");
+	@include personal-image-icon("images/thailand_fight.gif");
 }
 
 #tesla-background-img {
-	@include background-image-icon("images/tesla_coil.gif");
+	@include personal-image-icon("images/tesla_coil.gif");
+}
+
+#bike-background-img {
+	@include personal-image-icon("images/bike_fall.gif");
 }

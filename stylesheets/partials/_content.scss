@@ -1,4 +1,13 @@
 
+
+@mixin background-hover($image-url) {
+    &:hover {
+        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url($image-url);
+        background-size: 100% 100%;
+        cursor: pointer;
+    }  
+}
+
 /**
  * Background icon, when hovered over darkens
  * ex: square/yahoo/ibm clickable icons
@@ -6,14 +15,14 @@
 @mixin background-image-icon($image-url) {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url($image-url);
     background-size: 100% 100%;
-
-    &:hover {
-        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url($image-url);
-        background-size: 100% 100%;
-        cursor: pointer;
-    }
+    @include background-hover($image-url);
 }
 
+@mixin personal-image-icon($image-url) {
+    background: url($image-url);
+    background-size: 100% 100%;
+    @include background-hover($image-url);
+}
 
 .background-img {
     background-size: 100% 100%;
@@ -48,6 +57,10 @@
     border: 1px solid white; 
     box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
 
+}
+
+#work-select {
+    text-align: center;
 }
 
 .work-select-image {

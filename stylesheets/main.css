@@ -5794,6 +5794,9 @@ line.link {
     .background-img:first-child {
       margin-left: 0; } }
 
+#work-select {
+  text-align: center; }
+
 .work-select-image {
   width: 30%;
   margin-left: 3%; }
@@ -5820,8 +5823,7 @@ line.link {
   top: 15%; }
 
 #work {
-  background-color: #8FBC8F;
-  text-align: center; }
+  background-color: #8FBC8F; }
 
 #work-anchor {
   position: relative;
@@ -5976,7 +5978,7 @@ line.link {
   background-color: #FA8072; }
 
 #thailand-background-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/thailand_fight.gif");
+  background: url("images/thailand_fight.gif");
   background-size: 100% 100%; }
   #thailand-background-img:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/thailand_fight.gif");
@@ -5984,10 +5986,18 @@ line.link {
     cursor: pointer; }
 
 #tesla-background-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/tesla_coil.gif");
+  background: url("images/tesla_coil.gif");
   background-size: 100% 100%; }
   #tesla-background-img:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/tesla_coil.gif");
+    background-size: 100% 100%;
+    cursor: pointer; }
+
+#bike-background-img {
+  background: url("images/bike_fall.gif");
+  background-size: 100% 100%; }
+  #bike-background-img:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/bike_fall.gif");
     background-size: 100% 100%;
     cursor: pointer; }
 
