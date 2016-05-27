@@ -1,3 +1,12 @@
 #personal {
-	background-color: rgba(103, 58, 183, 0.88);
+	background-color: #FA8072;
+
+}
+
+#thailand-background-img {
+	@include background-image-icon("images/thailand_fight.gif");
+}
+
+#tesla-background-img {
+	@include background-image-icon("images/tesla_coil.gif");
 }

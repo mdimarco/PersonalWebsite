@@ -18,20 +18,31 @@
 .background-img {
     background-size: 100% 100%;
     vertical-align: top;
-    width: 30%;
+    width: 20%;
     height: 30%;
     min-height: 200px;
     display: inline-block;
-    margin: 3% 0 0 2.5%;
+    margin: 3% 0 0 7.5%;
 
     &:hover {
         text-decoration: none;
+    }
+
+    @media( max-width: $largeDevice ) {
+        width: 25%;
+        margin: 3% 0 0 3%;
     }
 
     @media( max-width: $smallDevice ) {
         display: block;
         width: 60%;
         margin: 0 0 10% 20%;
+    }
+    
+    @media (min-width: $smallDevice) {
+        &:first-child {
+            margin-left: 0;
+        }
     }
 
     border: 1px solid white; 
@@ -46,7 +57,6 @@
 
 .work-select-panel {
 	width: 100%;
-	max-width: 62em;
     margin: auto;
 }
 

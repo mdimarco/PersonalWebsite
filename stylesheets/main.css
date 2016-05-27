@@ -5772,20 +5772,27 @@ line.link {
 .background-img {
   background-size: 100% 100%;
   vertical-align: top;
-  width: 30%;
+  width: 20%;
   height: 30%;
   min-height: 200px;
   display: inline-block;
-  margin: 3% 0 0 2.5%;
+  margin: 3% 0 0 7.5%;
   border: 1px solid white;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.75); }
   .background-img:hover {
     text-decoration: none; }
+  @media (max-width: 1000px) {
+    .background-img {
+      width: 25%;
+      margin: 3% 0 0 3%; } }
   @media (max-width: 480px) {
     .background-img {
       display: block;
       width: 60%;
       margin: 0 0 10% 20%; } }
+  @media (min-width: 480px) {
+    .background-img:first-child {
+      margin-left: 0; } }
 
 .work-select-image {
   width: 30%;
@@ -5793,7 +5800,6 @@ line.link {
 
 .work-select-panel {
   width: 100%;
-  max-width: 62em;
   margin: auto; }
 
 .work-select-panel-text {
@@ -5814,7 +5820,8 @@ line.link {
   top: 15%; }
 
 #work {
-  background-color: #8FBC8F; }
+  background-color: #8FBC8F;
+  text-align: center; }
 
 #work-anchor {
   position: relative;
@@ -5937,7 +5944,7 @@ line.link {
   color: #1F70C1; }
 
 #contact {
-  background-color: #FA8072;
+  background-color: #2b4863;
   padding-bottom: 10%; }
 
 .contact-icon-container {
@@ -5955,9 +5962,9 @@ line.link {
 
 .contact-icon-link {
   cursor: pointer;
-  color: #333; }
+  color: #D6D6D6; }
   .contact-icon-link:visited {
-    color: #333; }
+    color: #D6D6D6; }
   .contact-icon-link:hover {
     color: #F1E06A;
     text-decoration: none; }
@@ -5966,13 +5973,30 @@ line.link {
   font-size: 6em; }
 
 #personal {
-  background-color: rgba(103, 58, 183, 0.88); }
+  background-color: #FA8072; }
+
+#thailand-background-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/thailand_fight.gif");
+  background-size: 100% 100%; }
+  #thailand-background-img:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/thailand_fight.gif");
+    background-size: 100% 100%;
+    cursor: pointer; }
+
+#tesla-background-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/tesla_coil.gif");
+  background-size: 100% 100%; }
+  #tesla-background-img:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/tesla_coil.gif");
+    background-size: 100% 100%;
+    cursor: pointer; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200; }
 
 body {
-  background-color: #eee; }
+  background-color: #eee;
+  font-size: 12px; }
 
 hr {
   width: 90%; }
