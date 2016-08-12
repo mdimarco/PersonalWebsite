@@ -1,0 +1,3 @@
+#!/bin/bash
+jade --watch index.jade &
+sass --watch stylesheets/main.scss
